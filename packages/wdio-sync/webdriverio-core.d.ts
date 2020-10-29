@@ -1305,7 +1305,7 @@ declare namespace WebdriverIO {
 
         /**
          * Uploads a file to the Selenium Standalone server or other browser driver
-         * (e.g. Chromedriver) by using the [`file`](docs/api/selenium.html#file) command.
+         * (e.g. Chromedriver) by using the [`file`](/docs/api/selenium.html#file) command.
          * _Note:_ that this command is only supported if you use a Selenium Hub or
          * Chromedriver directly.
          */
@@ -1338,6 +1338,7 @@ declare namespace WebdriverIO {
          * internal usage only. To run in watch mode see https://webdriver.io/docs/watcher.html
          */
         watch?: never;
+        runnerEnv?: Record<string, any>;
     }
 
     interface AddValueOptions {
